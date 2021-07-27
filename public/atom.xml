@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>孟杰的个人网站</title>
+  
+  
+  <link href="http://mengjie.com/atom.xml" rel="self"/>
+  
+  <link href="http://mengjie.com/"/>
+  <updated>2021-07-13T07:51:59.214Z</updated>
+  <id>http://mengjie.com/</id>
+  
+  <author>
+    <name>Jie Meng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://mengjie.com/2021/07/13/hello-world/"/>
+    <id>http://mengjie.com/2021/07/13/hello-world/</id>
+    <published>2021-07-13T06:51:08.365Z</published>
+    <updated>2021-07-13T07:51:59.214Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>命运善嫉，总吝啬赋予世人恒久的平静，<br>总猝不及防的把人一下子塞进过山车，<br>任你怎么恐惧挣扎也不肯轻易停下来，<br>非要把圆满的颠簸成支离破碎的，<br>再命你耗尽半生去拼补……<br>From 知乎 / 你一生的最低点是怎样的经历？</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;命运善嫉，总吝啬赋予世人恒久的平静，&lt;br&gt;总猝不及防的把人一下子塞进过山车，&lt;br&gt;任你怎么恐惧挣扎也不肯轻易停下来，&lt;br&gt;非要把圆满的颠簸成支离破碎的，&lt;br&gt;再命你耗尽半生去拼补……&lt;br&gt;From 知乎 / 你一生的最低点是怎样的经历？&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
