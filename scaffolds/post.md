@@ -4,10 +4,8 @@ date: 2021-03-18 14:20:40
 tags: JavaScript
 
 ## 写在前面
-* [github站点](https://github.com/kujian/30-seconds-of-code)
 * 收集有用的 Javascript 片段, 你可以在30秒或更少的时间里理解。
 * 代码段是在 ES6 中编写的, 请使用Babel transpiler确保向后兼容。
-* 版权：前端开发博客所有
 
 ## 数组
 ### `arrayMax`
