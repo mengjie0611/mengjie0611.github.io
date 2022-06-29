@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>常用前端面试参考总结 | 简简单单</title><meta name="keywords" content="面试"><meta name="author" content="Jie Meng"><meta name="copyright" content="Jie Meng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="常用前端面试参考总结标签（空格分隔）： Summarize Interview  原型与原型链原型 函数的prototype属性(图) 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象) 原型对象中有一个属性constructor, 它指向函数对象   给原型对象添加属性(一般都是方法) 作用: 函数的所有实例对象自动拥有原型中的属性(方法) 原型对象">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用前端面试参考总结">
+<meta property="og:url" content="http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="简简单单">
+<meta property="og:description" content="常用前端面试参考总结标签（空格分隔）： Summarize Interview  原型与原型链原型 函数的prototype属性(图) 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象) 原型对象中有一个属性constructor, 它指向函数对象   给原型对象添加属性(一般都是方法) 作用: 函数的所有实例对象自动拥有原型中的属性(方法) 原型对象">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg">
+<meta property="article:published_time" content="2021-03-18T00:00:00.000Z">
+<meta property="article:modified_time" content="2021-07-19T05:52:56.184Z">
+<meta property="article:author" content="Jie Meng">
+<meta property="article:tag" content="面试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg"><link rel="shortcut icon" href="/img/avatat.png"><link rel="canonical" href="http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '常用前端面试参考总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-19 13:52:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="简简单单" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatat.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">简简单单</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">常用前端面试参考总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-18T00:00:00.000Z" title="发表于 2021-03-18 08:00:00">2021-03-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-19T05:52:56.184Z" title="更新于 2021-07-19 13:52:56">2021-07-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="常用前端面试参考总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="常用前端面试参考总结"><a href="#常用前端面试参考总结" class="headerlink" title="常用前端面试参考总结"></a>常用前端面试参考总结</h1><p>标签（空格分隔）： Summarize Interview</p>
+<hr>
+<h2 id="原型与原型链"><a href="#原型与原型链" class="headerlink" title="原型与原型链"></a>原型与原型链</h2><h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><ul>
+<li>函数的prototype属性(图)<ul>
+<li>每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)</li>
+<li>原型对象中有一个属性constructor, 它指向函数对象</li>
+</ul>
+</li>
+<li>给原型对象添加属性(一般都是方法)<ul>
+<li>作用: 函数的所有实例对象自动拥有原型中的属性(方法)</li>
+<li>原型对象上的方法一般给其实例对象调用</li>
+</ul>
+</li>
+</ul>
+<h3 id="显式原型与隐式原型"><a href="#显式原型与隐式原型" class="headerlink" title="显式原型与隐式原型"></a>显式原型与隐式原型</h3><ul>
+<li>每个函数对象function都有一个prototype，即显式原型</li>
+<li>每个实例对象都有一个 <code>__proto__</code> ，可称为隐式原型</li>
+<li>对象的隐式原型的值为其对应构造函数的显式原型的值 ===&gt; 都指向函数对象</li>
+<li>内存结构(图)</li>
+<li>总结:<ul>
+<li>函数的prototype属性： 在定义函数时自动添加的，默认值是一个空Object对象</li>
+<li>对象的<code>__proto__</code>属性：创建对象时自动添加的，默认值为构造函数的prototype属性值</li>
+<li>程序员能直接操作显式原型，但不能直接操作隐式原型(ES6之前)</li>
+</ul>
+</li>
+<li>举个例子</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// Fn()</span><br><span class="line">var Fn = function () &#123;&#125;  // 执行这条函数定义语句, 函数体并没有执行</span><br><span class="line"></span><br><span class="line">// 每个函数function都有一个prototype，即显式原型(属性)</span><br><span class="line">console.log(Fn.prototype)</span><br><span class="line"></span><br><span class="line">// 每个实例对象都有一个__proto__，可称为隐式原型(属性)</span><br><span class="line">var fn = new Fn()</span><br><span class="line">console.log(fn.__proto__)</span><br><span class="line"></span><br><span class="line">// 对象的隐式原型的值为其对应构造函数的显式原型的值</span><br><span class="line">console.log(fn.__proto__ === Fn.prototype)  // true</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line"> 1. prototype属性: 函数对象</span><br><span class="line">    什么时候添加? 函数被定义时(创建函数对象时自动添加)</span><br><span class="line">    值是多少?  空的object实例对象: this.prototype = &#123;&#125;  this.prototype.constructor = this</span><br><span class="line"></span><br><span class="line">2. __proto__属性: 实例对象</span><br><span class="line">    什么时候添加? 创建实例对象时自动添加</span><br><span class="line">    值是多少?   构造函数的prototype属性值: this.__proto__ = Fn.prototype</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">/*</span><br><span class="line">    执行函数: 执行函数体中的所有语句</span><br><span class="line">    执行函数定义: 本质是创建函数对象</span><br><span class="line">*/</span><br><span class="line">console.log(Object.prototype.__proto__);  // null</span><br></pre></td></tr></table></figure>
+
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><ul>
+<li>原型链(图解)</li>
+<li>访问一个对象的属性时，<ul>
+<li>先在自身属性中查找，找到返回</li>
+<li>如果没有,再沿着<code>__proto__</code>这条链向上查找, 找到返回</li>
+<li>如果最终没找到,返回undefined</li>
+</ul>
+</li>
+<li>别名：隐式原型链</li>
+<li>作用：<strong>查找对象的属性(方法)</strong></li>
+<li>构造函数/原型/实体对象的关系(图解)</li>
+<li>构造函数/原型/实体对象的关系2(图解)</li>
+<li>举个例子<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">console.log(Function.prototype===Function.__proto__)  // true</span><br><span class="line">console.log(Object.prototype.__proto__)  // null</span><br><span class="line">console.log(Object.prototype)</span><br><span class="line">function Fn() &#123;</span><br><span class="line">    this.test1 = function () &#123;</span><br><span class="line">        console.log(&#x27;test1()&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Fn.prototype.test2 = function () &#123;</span><br><span class="line">    console.log(&#x27;test2()&#x27;)</span><br><span class="line">&#125;</span><br><span class="line">var fn = new Fn()</span><br><span class="line"></span><br><span class="line">fn.test1()</span><br><span class="line">fn.test2()</span><br><span class="line">console.log(fn.toString())</span><br><span class="line">console.log(fn.test3)  // undefined</span><br><span class="line">fn.test3()</span><br><span class="line"></span><br><span class="line">// 详情请看githubMarkdownPhotos分析图</span><br></pre></td></tr></table></figure></li>
+<li><strong>原型链总结</strong><ul>
+<li>查找对象的属性沿着原型链查找，查找变量沿着作用域链查找</li>
+<li>函数对象既有<code>prototype</code>属性，也有<code>__proto__</code>属性（函数的本质是被new出来的）</li>
+<li>所有函数对象的<code>__proto__</code>属性值都相等，都等于大写的Function的 <code>prototype</code></li>
+<li>所有函数都是Function的实例，包括它自己。<br><code>Function.prototype === Function.__proto__ // true</code></li>
+<li>非函数对象（实例对象）肯定是其对应构造函数的实例</li>
+</ul>
+</li>
+</ul>
+<h3 id="原型链的属性问题"><a href="#原型链的属性问题" class="headerlink" title="原型链的属性问题"></a>原型链的属性问题</h3><ul>
+<li>读取对象的属性值时: 会自动到原型链中查找</li>
+<li>设置对象的属性值时: 不会查找原型链, 如果当前对象中没有此属性, 直接添加此属性并设置其值</li>
+<li>即：<strong>当给对象属性赋值时不会使用原型链, 而只是在当前对象中进行操作</strong></li>
+<li>方法一般定义在原型中, 属性一般通过构造函数定义在对象本身上</li>
+<li>举个例子</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function Person(name, age) &#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.setName = function (name) &#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.sex = &#x27;男&#x27;;</span><br><span class="line"></span><br><span class="line">var p1 = new Person(&#x27;Tom&#x27;, 12)</span><br><span class="line">p1.setName(&#x27;Jack&#x27;)</span><br><span class="line">console.log(p1.name, p1.age, p1.sex) // Jack 12 &#x27;男&#x27;</span><br><span class="line"></span><br><span class="line">p1.sex = &#x27;女&#x27;  // 设置属性值时, 不会查看原型链</span><br><span class="line">console.log(p1.name, p1.age, p1.sex) //Jack 12 &#x27;女&#x27;</span><br><span class="line"></span><br><span class="line">var p2 = new Person(&#x27;Bob&#x27;, 23)</span><br><span class="line">console.log(p2.name, p2.age, p2.sex) //&#x27;Bob&#x27; 23 &#x27;男&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="探索instanceof"><a href="#探索instanceof" class="headerlink" title="探索instanceof"></a>探索instanceof</h3><ul>
+<li>instanceof是如何判断的?<ul>
+<li>表达式: A instanceof B</li>
+<li>如果B函数的显式原型对象在A对象的原型链上, 返回true, 否则返回false</li>
+<li>A可以寻找多步，B只能找一步到自己的显式原型上</li>
+</ul>
+</li>
+<li>Function是通过new自己产生的实例。即所有函数都是Function的实例包括它自身。</li>
+<li>几点总结<ul>
+<li><code>Object created by Function</code></li>
+<li><code>Object 是 Function 的实例</code></li>
+<li><code>Object 是 Object 的实例</code></li>
+</ul>
+</li>
+<li>理解实例</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">console.log(Object instanceof Function) // true</span><br><span class="line">console.log(Object instanceof Object) // true</span><br><span class="line">console.log(Function instanceof Object) // true</span><br><span class="line">console.log(Function instanceof Function) // true</span><br><span class="line">console.log(Object instanceof Foo); // false</span><br><span class="line"></span><br><span class="line">console.log(Function.prototype) // 不是Object的实例  ƒ () &#123; [native code] &#125;</span><br><span class="line">console.log(Function.prototype.__proto__===Object.prototype) // true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>原型与原型链分析详图<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function Foo () &#123;&#125;</span><br><span class="line">var f1 = new Foo()</span><br><span class="line">var f2 = new Foo()</span><br><span class="line">var o1 = &#123;&#125;</span><br><span class="line">var o2 = &#123;&#125;</span><br></pre></td></tr></table></figure>
+<img src="https://i.imgur.com/Q3nxgq6.png" alt="原型与原型链分析"></li>
+</ul>
+<h3 id="面试题及总结"><a href="#面试题及总结" class="headerlink" title="面试题及总结"></a>面试题及总结</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">// 测试题 1</span><br><span class="line">var A = function() &#123;&#125;</span><br><span class="line">A.prototype.n = 1</span><br><span class="line">var b = new A()</span><br><span class="line"></span><br><span class="line">A.prototype = &#123;</span><br><span class="line">    n: 2,</span><br><span class="line">    m: 3</span><br><span class="line">&#125;</span><br><span class="line">var c = new A()</span><br><span class="line">console.log(b.n, b.m, c.n, c.m) //  1 undefined  2  3</span><br><span class="line"></span><br><span class="line">// 测试题2</span><br><span class="line">var F = function()&#123;&#125;;</span><br><span class="line">Object.prototype.a = function()&#123;</span><br><span class="line">    console.log(&#x27;a()&#x27;)</span><br><span class="line">&#125;;</span><br><span class="line">Function.prototype.b = function()&#123;</span><br><span class="line">    console.log(&#x27;b()&#x27;)</span><br><span class="line">&#125;;</span><br><span class="line">var f = new F();</span><br><span class="line">f.a()     // a()</span><br><span class="line">f.b()     // f.b is not a function</span><br><span class="line">F.a()     // a()</span><br><span class="line">F.b()     // b()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!--</span><br><span class="line">原型链（隐式原型链）：作用查找对象的属性</span><br><span class="line">    访问一个对象的属性时，先在自身属性中查找，找到返回；</span><br><span class="line">    如果没有再沿着 __proto__ 这条链向上查找，找到返回，如果最终没有找到，则返回undefined</span><br><span class="line"></span><br><span class="line">A instanceof B  的判断</span><br><span class="line">    如果B函数的显式原型对象在A对象的原型链上, 返回true, 否则返回false</span><br><span class="line"></span><br><span class="line">prototype 与 __proto__ 在创建的时候相关联，在执行的时候没有关联</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="webpack及构建工具的理解"><a href="#webpack及构建工具的理解" class="headerlink" title="webpack及构建工具的理解"></a>webpack及构建工具的理解</h2><h3 id="构建工具的功能"><a href="#构建工具的功能" class="headerlink" title="构建工具的功能"></a>构建工具的功能</h3><ul>
+<li><strong>代码转换</strong>：TypeScript 编译成 JavaScript、SCSS 编译成 CSS 等。（开发写的代码有些浏览器无法识别，如ES6语法）</li>
+<li><strong>文件优化</strong>：压缩 JavaScript、CSS、HTML 代码，压缩合并图片等。（压缩代码）</li>
+<li><strong>模块合并</strong>：在采用模块化的项目里会有很多个模块和文件，需要构建功能把模块分类合并成一个文件。</li>
+<li><strong>代码分割</strong>：提取多个页面的公共代码、提取首屏不需要执行部分的代码让其异步加载。</li>
+<li><strong>自动刷新</strong>：监听本地源代码的变化，自动重新构建、刷新浏览器。 live reload 自动刷新 / hot reload 热模替换（HMR）（开发环境下修改代码后可以自动刷新浏览器看到最新的效果，可以监视源码的变化）</li>
+<li><strong>代码校验</strong>：在代码被提交到仓库前需要校验代码是否符合规范，以及单元测试是否通过。</li>
+</ul>
+<h3 id="模块化打包和非模块化打包思想差异"><a href="#模块化打包和非模块化打包思想差异" class="headerlink" title="模块化打包和非模块化打包思想差异"></a>模块化打包和非模块化打包思想差异</h3><ul>
+<li>非模块化打包：先对文件进行分类（如js/img/css等），然后分别打包</li>
+<li>模块化打包：将所有资源看成模块，而所有的模块之间都是有关系的，项目中的资源是相互关联的节点通过入口js形成一个网(图)的结构。<ul>
+<li>从入口开始递归的查找所有相关联的模块</li>
+<li>找到一个模块(如css)后会找对应的loader，模块文件会进行正则匹配的</li>
+<li>四个核心概念：entry | output | module(loader) | plugins</li>
+<li>loader模块加载器，将非js模块打包成webpack能理解的js模块</li>
+<li>图片处理推荐使用 <code>url-loader</code>，配置选项可以对图片进行限制，小于此限制的会会通过base64处理的</li>
+</ul>
+</li>
+</ul>
+<h3 id="webpack的核心概念"><a href="#webpack的核心概念" class="headerlink" title="webpack的核心概念"></a>webpack的核心概念</h3><ul>
+<li><strong>Entry</strong>：入口，Webpack进行打包的起始点(文件)</li>
+<li><strong>Output</strong>：出口，webpack编译打包生成的bundle(文件)</li>
+<li><strong>Loader</strong>：模块加载(转换)器，将非js模块包装成webpack能理解的js模块<ul>
+<li>（举例：如处理css要用到style-loader/css-loader;处理img使用file-loader/url-loader）</li>
+</ul>
+</li>
+<li><strong>Plugin</strong>：插件，在Webpack构建流程中的特定时机插入具有特定功能的代码<ul>
+<li>（举例：CleanPlugin一开始就会清除指定的文件/夹；</li>
+<li>ExtractTextPlugin用于样式的抽取，用来从js中分离出css并单独打包；</li>
+<li>CopyPlugin复制静态资源；</li>
+<li>webpack.HashedModuleIdsPlugin根据代码内容生成hash作为模块的id(默认是下标)；</li>
+<li>webpack.optimize.CommonsChunkPlugin将第三方模块单独打包</li>
+<li>……） </li>
+</ul>
+</li>
+<li>Module：模块，在 Webpack眼里一切皆模块，默认只识别js文件，如果是其它类型文件利用对应的loader转换为js模块</li>
+<li>Chunk：代码块，一个 Chunk 由多个模块组合而成，最终浏览器执行的是webpack打包生成的chunk文件(bundle同理)</li>
+</ul>
+<h3 id="webpack的其他概念"><a href="#webpack的其他概念" class="headerlink" title="webpack的其他概念"></a>webpack的其他概念</h3><ul>
+<li><img src="http://static.zybuluo.com/MarlonChiu/12qcvudloms3ft00fsxugjtt/webpack%E5%85%B6%E5%AE%83%E6%A6%82%E5%BF%B5_1.png" alt="webpack其它概念_1.png-39.4kB"></li>
+<li><img src="http://static.zybuluo.com/MarlonChiu/sxodezube6trrxitofbx3drp/webpack%E5%85%B6%E5%AE%83%E6%A6%82%E5%BF%B5_2.png" alt="webpack其它概念_2.png-27.8kB"></li>
+</ul>
+<h3 id="webpack-和-gulp-的区别"><a href="#webpack-和-gulp-的区别" class="headerlink" title="webpack 和 gulp 的区别"></a>webpack 和 gulp 的区别</h3><ul>
+<li>webpack 是一种模块化打包工具，主要用于模块化方案，预编译模块的方案；</li>
+<li>gulp 是工具链、构建工具，可以配合各种插件做 js 压缩，css压缩，less 编译替代手工实现自动化工作。</li>
+<li>Grunt/Gulp 更多的是一种工作流；提供集成所有服务的一站式平台； gulp可以用来优化前端工作流程。</li>
+</ul>
+<h2 id="客户端两种存储"><a href="#客户端两种存储" class="headerlink" title="客户端两种存储"></a>客户端两种存储</h2><h3 id="Cookie存储"><a href="#Cookie存储" class="headerlink" title="Cookie存储"></a>Cookie存储</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Cookie是一项很老的技术的，就是因为它老，所以兼容性还是不错的。</span><br><span class="line">使用Cookie作为本地存储优点：兼容性好，缺点：操作繁琐，只能存简单的数据，还会过期，站点设置httponly的话，JS就不无法操作Cookie了。</span><br></pre></td></tr></table></figure>
+
+<h3 id="Web-Storage存储"><a href="#Web-Storage存储" class="headerlink" title="Web Storage存储"></a>Web Storage存储</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WebStorage是HTML5中为WebApplication提供一种存储的API，目前主流的新版本的浏览器都支持，当然IE789你就没有办法了。WebStorage主要分成localStorage和sessionStorage两种。</span><br></pre></td></tr></table></figure>
+
+<h4 id="sessionStorage"><a href="#sessionStorage" class="headerlink" title="sessionStorage"></a>sessionStorage</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sessionStorage是个全局对象，它维护着在页面会话(page session)期间有效的存储空间。只要浏览器开着，页面会话周期就会一直持续。当页面重新载入(reload)或者被恢复(restores)时，页面会话也是一直存在的。每在新标签或者新窗口中打开一个新页面，都会初始化一个新的会话。</span><br></pre></td></tr></table></figure>
+
+<h4 id="localStorage"><a href="#localStorage" class="headerlink" title="localStorage"></a>localStorage</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localStorage也是一个全局变量，它的生命周期比sessionStorage长。localStorage和sessionStorage都继承自Storage因此它们的用法相同。</span><br></pre></td></tr></table></figure>
+
+<h4 id="WebStorage的优点"><a href="#WebStorage的优点" class="headerlink" title="WebStorage的优点"></a>WebStorage的优点</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用简单方便，缺点：IE有些版本不支持，不能存复杂的对象，必须先转化成JSON字符串，没有索引搜索效率不高，只能同步读写操作，当写入的数据比较大时可能造成JS引擎堵塞。</span><br></pre></td></tr></table></figure>
+
+<h4 id="sessionStorage用法和localStorage区别"><a href="#sessionStorage用法和localStorage区别" class="headerlink" title="sessionStorage用法和localStorage区别"></a>sessionStorage用法和localStorage区别</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">完全一致，差别只在有效期：</span><br><span class="line">sessionStorage在用户结束会话（即关闭浏览器或退出账户时失效）；</span><br><span class="line">localStorage无失效期，用户在清理浏览器缓存的时候会被清除。</span><br></pre></td></tr></table></figure>
+
+<h3 id="Cookie存储和Web-Storage存储区别"><a href="#Cookie存储和Web-Storage存储区别" class="headerlink" title="Cookie存储和Web Storage存储区别"></a>Cookie存储和Web Storage存储区别</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">localStorage与sessionStorage作为新时代的产物，相比旧时代的cookie有其巨大的优越性。优越性有三:</span><br><span class="line">    其一在能存储的数据量，cookie最大能存储4kb的数据，而localStorage与sessionStorage最大能存储5Mb，目前各大浏览器支持的标准都是如此；</span><br><span class="line">    </span><br><span class="line">    其二在功能上，cookie只能存储String类型的数据，以往要将用户数据存储在本地，需要将数据拼接成字符串，再存进cookie,取数据的时候同样麻烦，先将整个cookie对象拿到（String对象），再按拼接的规则拆分，再拿需要的数据，存取都很麻烦！</span><br><span class="line">    localStorage与sessionStorage不仅支持传统的String类型，还可以将json对象存储进去,存取数据都方便不少，json的优越性就不赘述，localStorage与sessionStorage无疑更现代化；</span><br><span class="line">    </span><br><span class="line">    其三是cookie是不可或缺的，cookie的作用是与服务器进行交互，作为http规范的一部分而存在；而web storage仅仅是为了在本地‘存储’而生；</span><br><span class="line">    其四在语义层面上，localStorage与sessionStorage语法更优雅、简便。</span><br></pre></td></tr></table></figure>
+
+<h3 id="存储方式的操作对比演示"><a href="#存储方式的操作对比演示" class="headerlink" title="存储方式的操作对比演示"></a>存储方式的操作对比演示</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// cookie的操作</span><br><span class="line">设置cookie: document.cookie = &#x27;key=value&#x27;;</span><br><span class="line">获取cookie: document.cookie;</span><br><span class="line">删除cookie: document.cookie = &quot;key=value;max-age=0&quot;;</span><br><span class="line">设置max-age存储期限: document.cookie = &quot;key=value;max-age=1000&quot;; // 1000秒</span><br><span class="line"></span><br><span class="line">// web storage操作</span><br><span class="line">保存数据 setItem(key,value)</span><br><span class="line">读取数据 getItem(key)</span><br><span class="line">删除单个数据 removeItem(key)</span><br><span class="line">清空全部数据 clearItem()</span><br><span class="line">获取数据索引 key(index)</span><br></pre></td></tr></table></figure>
+
+<h3 id="cookie-storage-session-关系"><a href="#cookie-storage-session-关系" class="headerlink" title="cookie / storage / session 关系"></a>cookie / storage / session 关系</h3><ul>
+<li>cookie<ul>
+<li>优点：可以解决http无状态问题 </li>
+<li>缺点：<ol>
+<li>与服务器交互的时候有数量和长度限制 每个域名最多20条，长度不能超过4KB  </li>
+<li>安全性问题 容易被人拦截 </li>
+<li>浪费宽带，每次请求新页面，cookie都会被发过去 </li>
+<li>不可以跨域  </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>cookie 和session区别<ul>
+<li>cookie是把数据放在客户的浏览器上，只能存储sting类型</li>
+<li>session数据是放在服务器上，能存储json 类型、sting类型</li>
+<li>session会在一定的时间内保留数据存在服务器上，当访问增多，<br>会比较占你服务器的性能 ，减轻服务器的性能 应当使用cookie</li>
+<li>sessionStorage是当前对话的缓存，浏览器窗口关闭即消失，会话级别的存储</li>
+<li>localStorage持久存在，除非清除浏览器缓存。</li>
+</ul>
+</li>
+</ul>
+<h2 id="数组的一些方法"><a href="#数组的一些方法" class="headerlink" title="数组的一些方法"></a>数组的一些方法</h2><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.先将原数组进行排序</span></span><br><span class="line"><span class="comment">2.检查原数组中的第i个元素 与 结果数组中的最后一个元素是否相同，因为已经排序，所以重复元素会在相邻位置</span></span><br><span class="line"><span class="comment">3.如果不相同，则将该元素存入结果数组中</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.unique1 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.sort(); <span class="comment">//先排序</span></span><br><span class="line">    <span class="keyword">var</span> res = [<span class="built_in">this</span>[<span class="number">0</span>]];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">this</span>.length; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">this</span>[i] !== res[res.length - <span class="number">1</span>])&#123;</span><br><span class="line">        res.push(<span class="built_in">this</span>[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line">  </span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.创建一个新的数组存放结果</span></span><br><span class="line"><span class="comment">2.创建一个空对象</span></span><br><span class="line"><span class="comment">3.for循环时，每次取出一个元素与对象进行对比，如果这个元素不重复，</span></span><br><span class="line"><span class="comment">  则把它存放到结果数组中，同时把这个元素的内容作为对象的一个属性，</span></span><br><span class="line"><span class="comment">  并赋值为1，存入到第2步建立的对象中。</span></span><br><span class="line"><span class="comment">说明：至于如何对比，就是每次从原数组中取出一个元素，然后到对象中去访问这个属性，如果能访问到值，则说明重复。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.unique2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> res = [];</span><br><span class="line">    <span class="keyword">var</span> json = &#123;&#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">this</span>.length; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!json[<span class="built_in">this</span>[i]])&#123;</span><br><span class="line">            res.push(<span class="built_in">this</span>[i]);</span><br><span class="line">            json[<span class="built_in">this</span>[i]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">112</span>,<span class="number">112</span>,<span class="number">34</span>,<span class="string">&#x27;你好&#x27;</span>,<span class="number">112</span>,<span class="number">112</span>,<span class="number">34</span>,<span class="string">&#x27;你好&#x27;</span>,<span class="string">&#x27;str&#x27;</span>,<span class="string">&#x27;str1&#x27;</span>];</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">7</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">11</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">0</span>];</span><br><span class="line"><span class="comment">// 方法零</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Set</span>(arr));  <span class="comment">// Set(7) &#123;1, 7, 3, 4, 11, 2, 0&#125;</span></span><br><span class="line"><span class="comment">// 方法一</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.unique1()); <span class="comment">// (7) [0, 1, 11, 2, 3, 4, 7]  按照Unicode排列了</span></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line"><span class="built_in">console</span>.log(arr.unique2()); <span class="comment">// (7) [0, 1, 11, 2, 3, 4, 7]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">function quickSort(arr) &#123;</span><br><span class="line">  if(arr.length &lt;= 1)&#123;</span><br><span class="line">    return arr;</span><br><span class="line">  &#125;</span><br><span class="line">  // 基准索引（理论上可以任意选取）</span><br><span class="line">  var pivotIndex = parseInt(arr.length/2),</span><br><span class="line">    // 基准值</span><br><span class="line">    pivot = arr.splice(pivotIndex,1)[0],</span><br><span class="line">    leftArr = [],</span><br><span class="line">    rightArr = [],</span><br><span class="line">    length = arr.length;</span><br><span class="line">  // 遍历序列，根据基准拆分为两个子序列</span><br><span class="line">  for (var i = 0; i &lt; length; i++) &#123;</span><br><span class="line">    if(arr[i] &lt; pivot)&#123;</span><br><span class="line">      leftArr.push(arr[i]);</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">      rightArr.push(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  console.log(pivot); // 输出了三次 3 1 7</span><br><span class="line">  </span><br><span class="line">  // 连接左序列、基准、右序列</span><br><span class="line">  return quickSort(leftArr).concat(pivot, quickSort(rightArr))</span><br><span class="line">&#125;</span><br><span class="line">var demoArr = [8,4,7,2,0,3,1]</span><br><span class="line"></span><br><span class="line">// 方法一</span><br><span class="line">console.log(demoArr.sort()); // (7) [0, 1, 2, 3, 4, 7, 8]</span><br><span class="line">// 方法二</span><br><span class="line">console.log(quickSort(demoArr)) // (7) [0, 1, 2, 3, 4, 7, 8]</span><br></pre></td></tr></table></figure>
+
+<h2 id="前端WEB-H5性能优化"><a href="#前端WEB-H5性能优化" class="headerlink" title="前端WEB/H5性能优化"></a>前端WEB/H5性能优化</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 参考CSDN博客</span><br><span class="line">http://blog.csdn.net/lpf1215/article/details/74315797?locationNum=8&amp;fps=1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>减少http请求，合理设置 HTTP缓存</li>
+<li>使用浏览器缓存</li>
+<li>启用压缩</li>
+<li>CSS Sprites</li>
+<li>LazyLoad Images</li>
+<li>CSS放在页面最上部，javascript放在页面最下面</li>
+<li>异步请求Callback（就是将一些行为样式提取出来，慢慢的加载信息的内容）</li>
+<li>减少cookie传输</li>
+<li>Javascript代码优化</li>
+<li>CSS选择符优化</li>
+<li>CDN加速</li>
+<li>反向代理</li>
+</ul>
+<h2 id="px-em-rem-区别"><a href="#px-em-rem-区别" class="headerlink" title="px em rem 区别"></a>px em rem 区别</h2><ul>
+<li>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的</li>
+<li>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸</li>
+<li>rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML根元素</li>
+</ul>
+<h2 id="实现一个jsonp请求"><a href="#实现一个jsonp请求" class="headerlink" title="实现一个jsonp请求"></a>实现一个jsonp请求</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function jsonpCallback(result) &#123;</span><br><span class="line">    // alert(result);  </span><br><span class="line">    for(var i in result) &#123;</span><br><span class="line">        alert(i+&quot;:&quot;+result[i]);// 循环输出a:1,b:2,etc.  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var JSONP = document.createElement(&quot;script&quot;);</span><br><span class="line">JSONP.type = &quot;text/javascript&quot;;</span><br><span class="line">JSONP.src = &quot;http://crossdomain.com/services.php?callback=jsonpCallback&quot;;</span><br><span class="line">document.getElementsByTagName(&quot;head&quot;)[0].appendChild(JSONP);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="原型与原型链分析图例"><a href="#原型与原型链分析图例" class="headerlink" title="原型与原型链分析图例"></a>原型与原型链分析图例</h2><ul>
+<li><p>图例一<br><img src="http://static.zybuluo.com/MarlonChiu/v5fxgw1c326yrmvru8gt4qxa/%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%88%86%E6%9E%90%E5%9B%BE%E4%BE%8B_01.png" alt="原型链分析图例_01.png-35.1kB"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// 图例分析说明</span><br></pre></td></tr></table></figure></li>
+<li><p>图例二<br><img src="http://static.zybuluo.com/MarlonChiu/qj4jj2hpkqymby58zjazwl7x/%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%88%86%E6%9E%90%E5%9B%BE%E4%BE%8B_02.png" alt="原型链分析图例_02.png-46.7kB"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 图例分析说明</span><br><span class="line">两个空间：栈和堆。在代码未执行之前，JS引擎就会先加载执行一些内置的代码就。在开始之前就先执行了Object定义（function Object(value)&#123;&#125;），栈空间会有一个Object引用变量，传的是地址值0x123，开辟出一块空间，该空间就是Object函数对象，函数对象上有一个prototype属性，该属性也是引用类型，传递地址值0x234，开辟出一块新的空间，该空间指向Object原型对象，该Object原型对象的原型上包含hasOwnProperty、toString......等一些属性，也就说在代码执行之前第一列的关系已经存在了。</span><br><span class="line"></span><br><span class="line">代码执行function Fn()&#123;&#125;，Fn指向的堆空间中一块区域，地址值为0x345，即Fn函数对象，Fn函数对象有一个prototype属性，该属性也是指向一块地址值0x456，指向Fn原型对象，该对象是一个空对象即&#123;&#125;。这个实例对象的__proto__又会指向Object的函数对象的prototype属性（实例对象的隐式原型等于函数对象的显示原型），地址值也是0x234，也会指向Object原型对象。</span><br><span class="line">代码执行Fn.prototype.test2 则在Fn原型对象上添加test2()方法</span><br><span class="line"></span><br><span class="line">代码执行var fn = new Fn()，fn的地址值为0x567，在堆内存中开辟空间指向Fn实例对象，该对象有隐式原型__proto__，其值是0x456，箭头指向Fn原型对象。Fn实例对象上有个方法test1()。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">console.log(Function.prototype === Function.__proto__)  // true</span><br><span class="line">console.log(Object.prototype.__proto__)  // null</span><br><span class="line">console.log(Object.prototype.toString)  // ƒ toString() &#123; [native code] &#125;  Object原型上有toString方法</span><br></pre></td></tr></table></figure></li>
+<li><p>图例三<br><img src="http://static.zybuluo.com/MarlonChiu/2o4q7d8zguhokxee7b4avun1/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%88%86%E6%9E%90%E5%9B%BE%E4%BE%8B_03.png" alt="原型与原型链分析图例_03.png-129.8kB"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">&#125;</span><br><span class="line">var f1 = new Foo()</span><br><span class="line">var f2 = new Foo()</span><br><span class="line">var o1 = &#123;&#125;</span><br><span class="line">var o2 = &#123;&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>图例四<br><img src="http://static.zybuluo.com/MarlonChiu/4shqfy3qe573pw8t7fi70jpz/%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%8E%9F%E5%9E%8B%E5%88%86%E6%9E%90.png" alt="函数对象的原型分析.png-60.3kB"></p>
+</li>
+</ul>
+<h2 id="实现类的继承"><a href="#实现类的继承" class="headerlink" title="实现类的继承"></a>实现类的继承</h2><h3 id="原型链的方法"><a href="#原型链的方法" class="headerlink" title="原型链的方法"></a>原型链的方法</h3><ul>
+<li>套路<ol>
+<li>定义父类型构造函数</li>
+<li>给父类型的原型添加方法</li>
+<li>定义子类型的构造函数</li>
+<li>创建父类型的对象赋值给子类型的原型</li>
+<li>将子类型原型的构造属性设置为子类型</li>
+<li>给子类型原型添加方法</li>
+<li>创建子类型的对象: 可以调用父类型的方法</li>
+</ol>
+</li>
+<li>关键<ol>
+<li>子类型的原型为父类型的一个实例对象<br>Child.prototype = new Parent()</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function Parent() &#123;</span><br><span class="line">    this.pProp = &#x27;this Parent prop&#x27;</span><br><span class="line">&#125;</span><br><span class="line">Parent.prototype.showPProp = function () &#123;</span><br><span class="line">    console.log(&#x27;showPProp()&#x27;, this.pProp)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child() &#123;</span><br><span class="line">    this.cProp = &#x27;this Child prop&#x27;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 让子类原型指向父类型实例</span><br><span class="line">Child.prototype = new Parent()</span><br><span class="line">// 让子类原型对象构造器属性指向子类</span><br><span class="line">Child.prototype.constructor = Child</span><br><span class="line"></span><br><span class="line">Child.prototype.showCProp = function () &#123;</span><br><span class="line">    console.log(&#x27;showCProp()&#x27;, this.cProp)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var child = new Child()</span><br><span class="line">child.showPProp()</span><br><span class="line">console.log(child.constructor) // ƒ Child() &#123; this.cProp = &#x27;this Child prop&#x27;&#125;</span><br><span class="line">console.log(child)   // Child &#123;cProp: &quot;this Child prop&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="class-类的方式"><a href="#class-类的方式" class="headerlink" title="class 类的方式"></a>class 类的方式</h3><ul>
+<li>通过class定义类/实现类的继承</li>
+<li>在类中通过constructor定义构造方法</li>
+<li>通过new来创建类的实例</li>
+<li>通过extends来实现类的继承</li>
+<li>通过super调用父类的构造方法</li>
+<li>重写从父类中继承的一般方法</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// 用class定义一个Person类</span><br><span class="line">class Person&#123;</span><br><span class="line">    constructor (name, age)&#123;   // 类的构造方法</span><br><span class="line">        this.name = name;</span><br><span class="line">        this.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">    showName ()&#123;   // 类的一般方法</span><br><span class="line">        console.log(this.name, this.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let p1 = new Person(&quot;TOM&quot;, 18);</span><br><span class="line">console.log(p1.name);</span><br><span class="line">p1.showName();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 定义一个Student 继承Person</span><br><span class="line">class Student extends Person &#123;  // 定义的Student类继承自Person类</span><br><span class="line">    constructor (name, age, salary)&#123;</span><br><span class="line">        super(name,age);  // 通过super调用父类的构造方法</span><br><span class="line">        this.salary = salary;</span><br><span class="line">    &#125;</span><br><span class="line">    showName (name, age, salary)&#123;</span><br><span class="line">        console.log(this.name, this.age, this.salary);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let s1 = new Student(&quot;MARLON&quot;, 26, 17000);</span><br><span class="line">console.log(s1.name);</span><br><span class="line">s1.showName();</span><br></pre></td></tr></table></figure>
+
+<h3 id="Object-create-方法"><a href="#Object-create-方法" class="headerlink" title="Object.create()方法"></a>Object.create()方法</h3><ul>
+<li><code>Object.create(prototype, [descriptors])</code><ul>
+<li>作用: 以指定对象为原型创建新的对象</li>
+<li>为新的对象指定新的属性, 并对属性进行描述<br>value : 指定值<br>writable : 标识当前属性值是否是可修改的, 默认为 false</li>
+</ul>
+</li>
+<li>用法演示<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//  Object.create(prototype, [descriptors])</span><br><span class="line">var obj = &#123;n:11&#125;;</span><br><span class="line">var obj2 = Object.create(obj);</span><br><span class="line">console.log(obj2, obj2.n);   // &#123;&#125; 11</span><br><span class="line">var obj3 = Object.create(obj,&#123;</span><br><span class="line">    m: &#123;</span><br><span class="line">        value: &quot;asd&quot;,</span><br><span class="line">        writable: false</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">obj3.m = 456;</span><br><span class="line">console.log(obj3.m);  // asd</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="原型链-借用构造函数的组合继承"><a href="#原型链-借用构造函数的组合继承" class="headerlink" title="原型链 + 借用构造函数的组合继承"></a>原型链 + 借用构造函数的组合继承</h3><ul>
+<li>利用原型链实现对父类型对象的方法继承</li>
+<li>利用call()借用父类型构建函数初始化相同属性</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">function Person(name, age) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">    this.age = age</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.setName = function (name) &#123;</span><br><span class="line">    this.name = name</span><br><span class="line">&#125;</span><br><span class="line">function Student(name, age, price) &#123; // 身价</span><br><span class="line">    Person.call(this, name, age)  // 相当于: this.Person(name, age)</span><br><span class="line">    this.price = price</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Student.prototype = new Person()</span><br><span class="line">Student.prototype.constructor = Student</span><br><span class="line"></span><br><span class="line">Student.prototype.setPrice = function (price) &#123;</span><br><span class="line">    this.price = price</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var s = new Student(&#x27;Jack&#x27;, 21, 13000)</span><br><span class="line">s.setName(&#x27;Bob&#x27;)</span><br><span class="line">s.setPrice(14000)</span><br><span class="line">console.log(s.name, s.age, s.price)</span><br></pre></td></tr></table></figure>
+
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Jie Meng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/">http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://mengjie.com" target="_blank">简简单单</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9D%A2%E8%AF%95/">面试</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/03/18/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E7%A7%AF%E7%B4%AF/"><img class="prev-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">前端面试题积累</div></div></a></div><div class="next-post pull-right"><a href="/2020/03/18/sense-of-ritual/"><img class="next-cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">没有仪式感的人生，永远都是灰头土脸</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/10/13/html5/" title="H5"><img class="cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-13</div><div class="title">H5</div></div></a></div><div><a href="/2021/03/18/前端面试题积累/" title="前端面试题积累"><img class="cover" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-03-18</div><div class="title">前端面试题积累</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatat.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jie Meng</div><div class="author-info__description">前端小码农，定期记录一下工作中遇到的一些问题</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mengjie0611"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">常用前端面试参考总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="toc-number">1.1.</span> <span class="toc-text">原型与原型链</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text">原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E5%BC%8F%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%9A%90%E5%BC%8F%E5%8E%9F%E5%9E%8B"><span class="toc-number">1.1.2.</span> <span class="toc-text">显式原型与隐式原型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="toc-number">1.1.3.</span> <span class="toc-text">原型链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E5%B1%9E%E6%80%A7%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.4.</span> <span class="toc-text">原型链的属性问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A2%E7%B4%A2instanceof"><span class="toc-number">1.1.5.</span> <span class="toc-text">探索instanceof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E6%80%BB%E7%BB%93"><span class="toc-number">1.1.6.</span> <span class="toc-text">面试题及总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack%E5%8F%8A%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.2.</span> <span class="toc-text">webpack及构建工具的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-number">1.2.1.</span> <span class="toc-text">构建工具的功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E5%9D%97%E5%8C%96%E6%89%93%E5%8C%85%E5%92%8C%E9%9D%9E%E6%A8%A1%E5%9D%97%E5%8C%96%E6%89%93%E5%8C%85%E6%80%9D%E6%83%B3%E5%B7%AE%E5%BC%82"><span class="toc-number">1.2.2.</span> <span class="toc-text">模块化打包和非模块化打包思想差异</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.3.</span> <span class="toc-text">webpack的核心概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack%E7%9A%84%E5%85%B6%E4%BB%96%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.4.</span> <span class="toc-text">webpack的其他概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack-%E5%92%8C-gulp-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.5.</span> <span class="toc-text">webpack 和 gulp 的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%A4%E7%A7%8D%E5%AD%98%E5%82%A8"><span class="toc-number">1.3.</span> <span class="toc-text">客户端两种存储</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Cookie%E5%AD%98%E5%82%A8"><span class="toc-number">1.3.1.</span> <span class="toc-text">Cookie存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Web-Storage%E5%AD%98%E5%82%A8"><span class="toc-number">1.3.2.</span> <span class="toc-text">Web Storage存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sessionStorage"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">sessionStorage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#localStorage"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">localStorage</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WebStorage%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">WebStorage的优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sessionStorage%E7%94%A8%E6%B3%95%E5%92%8ClocalStorage%E5%8C%BA%E5%88%AB"><span class="toc-number">1.3.2.4.</span> <span class="toc-text">sessionStorage用法和localStorage区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cookie%E5%AD%98%E5%82%A8%E5%92%8CWeb-Storage%E5%AD%98%E5%82%A8%E5%8C%BA%E5%88%AB"><span class="toc-number">1.3.3.</span> <span class="toc-text">Cookie存储和Web Storage存储区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F%E7%9A%84%E6%93%8D%E4%BD%9C%E5%AF%B9%E6%AF%94%E6%BC%94%E7%A4%BA"><span class="toc-number">1.3.4.</span> <span class="toc-text">存储方式的操作对比演示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cookie-storage-session-%E5%85%B3%E7%B3%BB"><span class="toc-number">1.3.5.</span> <span class="toc-text">cookie &#x2F; storage &#x2F; session 关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">数组的一些方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D"><span class="toc-number">1.4.1.</span> <span class="toc-text">数组去重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-number">1.4.2.</span> <span class="toc-text">数组排序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AFWEB-H5%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-number">1.5.</span> <span class="toc-text">前端WEB&#x2F;H5性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#px-em-rem-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.6.</span> <span class="toc-text">px em rem 区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AAjsonp%E8%AF%B7%E6%B1%82"><span class="toc-number">1.7.</span> <span class="toc-text">实现一个jsonp请求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE%E5%88%86%E6%9E%90%E5%9B%BE%E4%BE%8B"><span class="toc-number">1.8.</span> <span class="toc-text">原型与原型链分析图例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="toc-number">1.9.</span> <span class="toc-text">实现类的继承</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">1.9.1.</span> <span class="toc-text">原型链的方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#class-%E7%B1%BB%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.9.2.</span> <span class="toc-text">class 类的方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-create-%E6%96%B9%E6%B3%95"><span class="toc-number">1.9.3.</span> <span class="toc-text">Object.create()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E5%9E%8B%E9%93%BE-%E5%80%9F%E7%94%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E7%BB%84%E5%90%88%E7%BB%A7%E6%89%BF"><span class="toc-number">1.9.4.</span> <span class="toc-text">原型链 + 借用构造函数的组合继承</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mac生成ssh公匙,配置github SSH公钥连接"/></a><div class="content"><a class="title" href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接">mac生成ssh公匙,配置github SSH公钥连接</a><time datetime="2022-06-18T00:00:00.000Z" title="发表于 2022-06-18 08:00:00">2022-06-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/html5/" title="H5"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="H5"/></a><div class="content"><a class="title" href="/2021/10/13/html5/" title="H5">H5</a><time datetime="2021-10-13T00:00:00.000Z" title="发表于 2021-10-13 08:00:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/js/" title="JS Object"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS Object"/></a><div class="content"><a class="title" href="/2021/08/05/js/" title="JS Object">JS Object</a><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="命令行 linux常用命令"/></a><div class="content"><a class="title" href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令">命令行 linux常用命令</a><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly博客主题的详细配置"/></a><div class="content"><a class="title" href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置">butterfly博客主题的详细配置</a><time datetime="2021-07-19T03:14:48.355Z" title="发表于 2021-07-19 11:14:48">2021-07-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jie Meng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

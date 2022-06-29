@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>简简单单</title><meta name="keywords" content="前端"><meta name="author" content="Jie Meng"><meta name="copyright" content="Jie Meng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前端小码农，定期记录一下工作中遇到的一些问题">
+<meta property="og:type" content="website">
+<meta property="og:title" content="简简单单">
+<meta property="og:url" content="http://mengjie.com/index.html">
+<meta property="og:site_name" content="简简单单">
+<meta property="og:description" content="前端小码农，定期记录一下工作中遇到的一些问题">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://mengjie.com/img/avatat.png">
+<meta property="article:author" content="Jie Meng">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://mengjie.com/img/avatat.png"><link rel="shortcut icon" href="/img/avatat.png"><link rel="canonical" href="http://mengjie.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '简简单单',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-06-29 16:55:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="简简单单" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatat.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/background.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">简简单单</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">简简单单</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mac生成ssh公匙,配置github SSH公钥连接"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接">mac生成ssh公匙,配置github SSH公钥连接</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-18T00:00:00.000Z" title="发表于 2022-06-18 08:00:00">2022-06-18</time></span></div><div class="content">mac生成ssh公匙  首先在mac下进入~/.ssh,查看是否已经有公匙。  123cd ~/.sshls# known_hosts  现只有一个known_hosts，那我们就建一个ssh公钥，继续输入以下指令创建ssh公钥：  ssh-keygen  123➜  .ssh ssh-keygenGenerating public/private rsa key pair.Enter file in which to save the key (/Users/xxx/.ssh/id_rsa):  首先会让你输入公钥存储文件，输入默认的就行（/Users/你的电脑用户名/.ssh/id_rsa）。然后会输入公钥使用密码，输入两次，可以直接回车不设置。（建议直接回车，设置后后面提交代码也很麻烦，每次都要验证输入以下）。 创建完成后，再次输入ls查看目录下是否已经生成了公钥，确认有后，使用命令cat id_rsa.pub查看公钥  12lscat id_rsa.pub  从ssh-rsa开始一直到.local都是ssh公钥，复制出来，一会要到github中创建shh连接使用
+github配 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/13/html5/" title="H5">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="H5"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/13/html5/" title="H5">H5</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-10-13T00:00:00.000Z" title="发表于 2021-10-13 08:00:00">2021-10-13</time></span></div><div class="content">JS跳转到app store内应用下载页面跳转到应用商店:
+1(https)|(itms-apps)://itunes.apple.com/app/id&#123;appID&#125;
+
+跳转到撰写评价：
+1(https)|(itms-apps)://itunes.apple.com/app/id&#123;appID&#125;?action=write-review
+
+跳转到查看评价：
+1(https)|(itms-apps)://itunes.apple.com/app/viewContentsUserReviews?id=&#123;appID&#125;
+
+手机端和pc端均可适用。
+示例代码：
+1window.location.href = &#x27;itms-apps://itunes.apple.com/app/id414478124?action=write-review&#x27;</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/08/05/js/" title="JS Object">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS Object"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/05/js/" title="JS Object">JS Object</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></span></div><div class="content">Object扩展方法Object.create() 123456789101112var car = &#123;name:&quot;汽车&quot;，run:function()&#123;console.log(&#x27;跑起来&#x27;)&#125;&#125;var Passat = Object.create(car,&#123;brand:&#123;value:&#x27;帕萨特&#x27;,writabkle:true, //属性是否可以修改configurable:true,//属性是否可以删除enumerable：false // 属性是否可以枚举 &#125;，price:&#123;get:function()&#123;&#125;,set:function()&#123;&#125;&#125;&#125;)
+Object.defineProperties() 12345let sanlun = &#123;name : &quot;三轮车&quot;&#125;Object.defineProperties（sanlun,&#123;brand: & ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="命令行 linux常用命令"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令">命令行 linux常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></span></div><div class="content">linux常用命令 ls 查看当前文件夹下的文件 list单词缩写 cd 进入某一个文件夹内 change direct cd ..  cd/f clear 清屏 crtl+l mkdir 创建文件夹 mkdir + 文件名 touch 创建文件 touch + 文件名 rm 删除文件 rm + 文件名  删库跑路 rm / -rf  删除数据库的命令 drop database project(mysql) db.dropDatabase(moogodb) rm dir -f 删除文件夹 f强制删除文件夹 mv 移动文件夹 mv +  文件名 + 移动到的文件夹/ 新的命名 cat 查看文件内容 cat + 文件名 ctrl + c 取消命令 tab 自动补全 上下方向键查看命令行历史记录 Vim是一款命令行下的文本编辑器，编辑方式和图形化编辑器不同
+ vim + 文件名 编辑此文件（文件不存在则创建） i 进入编辑模式 insert esc + ：wq 保存并提出 esc + ：q！ 不保存并退出
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly博客主题的详细配置"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置">butterfly博客主题的详细配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-19T03:14:48.355Z" title="发表于 2021-07-19 11:14:48">2021-07-19</time></span></div><div class="content">1. 安装1.1 安装主题1git clone https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+1.2 启用主题打开根_config.yml配置文件，找到theme字段，将其值改为butterfly(先确认主题文件夹名称是否为butterfly)。
+12// 根 _config.ymltheme: butterfly
+修改后在根目录文件夹下执行以下代码
+1npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
+1.4 验证首先启动 Hexo 本地站点，并开启调试模式：
+1hexo s --debug
+在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。 当命令行输出中提示出：
+12INFO Hexo is running at http://0.0.0.0: ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/07/13/hello-world/" title="无题">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/07/13/hello-world/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-07-13T06:51:08.365Z" title="发表于 2021-07-13 14:51:08">2021-07-13</time></span></div><div class="content">
+命运善嫉，总吝啬赋予世人恒久的平静，总猝不及防的把人一下子塞进过山车，任你怎么恐惧挣扎也不肯轻易停下来，非要把圆满的颠簸成支离破碎的，再命你耗尽半生去拼补……From 知乎 / 你一生的最低点是怎样的经历？
+
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/03/18/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/" title="JavaScript中的异步编程解决方案">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaScript中的异步编程解决方案"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/18/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/" title="JavaScript中的异步编程解决方案">JavaScript中的异步编程解决方案</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-18T09:05:05.000Z" title="发表于 2021-03-18 17:05:05">2021-03-18</time></span></div><div class="content">Generator 函数学习指导：阮一峰ES6 – Generator函数
+基本概念
+语法上：Generator 函数是一个状态机，封装了多个内部状态；执行 Generator 函数会返回一个遍历器对象。也就是说，Generator 函数除了状态机，还是一个遍历器对象生成函数。返回的遍历器对象，可以依次遍历 Generator 函数内部的每一个状态。
+形式上：Generator 函数是一个普通函数，但是有两个特征。一是，function关键字与函数名之间有一个星号*；二是，函数体内部使用yield表达式，定义不同的内部状态（yield在英语里的意思就是“产出”）。
+
+123456789function* helloWorldGenerator() &#123;  yield &#x27;hello&#x27;;  yield &#x27;world&#x27;;  return &#x27;ending&#x27;;&#125;var hw = helloWorldGenerator();// 定义了一个 Generator 函数helloWorldGenerator，它内部有两个yi ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/03/18/vscode-tips/" title="VS Code 使用小技巧">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VS Code 使用小技巧"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/18/vscode-tips/" title="VS Code 使用小技巧">VS Code 使用小技巧</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-18T07:49:01.000Z" title="发表于 2021-03-18 15:49:01">2021-03-18</time></span></div><div class="content">VS Code 使用小技巧简介VSCode是微软推出的一款轻量编辑器，采取了和VS相同的UI界面，搭配合适的插件可以优化前端开发的体验。
+布局：左侧是用于展示所要编辑的所有文件和文件夹的文件管理器，依次是**资源管理器**，**搜索，GIT，调试，插件**，右侧是打开文件的编辑区域，最多可同时打开三个编辑区域到侧边。
+底栏：依次是**Git Branch，error&amp;warning，编码格式**等。
+
+常用插件（待补充）
+HTML Snippets：增强了zen-coding，增加了H5的自动补全，安装后每次打开自动启用(可能与其他插件冲突)。
+Angular 1.x Snippets：增加了AngularJs 1在.html和.js中的代码补全，安装后每次打开自动启用。
+Git Easy：增加了vscode中自带的git操作，安装后按F1调出控制台，输入git easy [options]完成git操作，代替git bash。
+HTML CSS Support: 增加.html中css的代码补全，可以手动增加配置文件来增加外部css中的class补全。详情见插件说明。
+VSc ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/03/18/vscode-sync-setting/" title="vscode-sync-setting">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vscode-sync-setting"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/18/vscode-sync-setting/" title="vscode-sync-setting">vscode-sync-setting</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-18T07:49:01.000Z" title="发表于 2021-03-18 15:49:01">2021-03-18</time></span></div><div class="content">VSCode配置的同步设置，实现不同设备上的统一写在前面
+准备工作：电脑上需安装VSCode，拥有一个github账户。实现同步的功能主要依赖于VSCode插件Settings Sync
+Setting Sync 可同步包含的所有扩展和完整的用户文件夹 
+设置文件
+快捷键设置文件
+VSCode扩展设置
+Launch File
+
+
+
+
+同步配置安装 同步插件”Settings Sync”生成token
+登录Github账户设置，头像 —&gt; Settings 在左侧（最后一个） Developer settings —&gt; Personal access tokens；
+
+
+
+点击按钮 Generate new token 新增一个token
+
+
+
+
+提示：记住生成的token值，最好找个笔记保存下来 。
+回到VSCode配置将token配置到本地(Sync: Update / Uplaod Settings) Shift + Alt + U 在弹窗里输入你的token， 回车后会生成syncSummary.txt文件
+
+syncSummary.txt文件会存储VSCode的设置 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/03/18/hexo%E5%85%A5%E9%97%A8/" title="Hexo 入门初级指南">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo 入门初级指南"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/18/hexo%E5%85%A5%E9%97%A8/" title="Hexo 入门初级指南">Hexo 入门初级指南</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-18T04:07:33.000Z" title="发表于 2021-03-18 12:07:33">2021-03-18</time></span></div><div class="content">写在前边使用github pages服务搭建博客的好处有：
+
+全是静态文件，访问速度快；
+免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；
+可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；
+
+
+
+
+数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；
+博客内容可以轻松打包、转移、发布到其它平台；
+
+准备工作安装 Node.js安装 Git安装 Hexo
+打开命令行，在命令行中输入以下命令:npm install -g hexo-cli 
+安装Hexo的Git插件（如果不安装这个插件，会导致Hexo博客内容无法发布）npm install hexo-deployer-git --save
+
+本地搭建Hexo博客
+打开命令行，输入以下命令，用于创建Hexo博客目录。
+  12// 指的是用于创建Hexo博客的目录，例如 e:/hexo  hexo init &lt;folder&gt;hexo init e:/Hexo 
+进入创建的项目，打开命令行，输入如下命令
+  1npm install
+初始化完毕后，可以在命令 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatat.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jie Meng</div><div class="author-info__description">前端小码农，定期记录一下工作中遇到的一些问题</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mengjie0611"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mac生成ssh公匙,配置github SSH公钥连接"/></a><div class="content"><a class="title" href="/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/" title="mac生成ssh公匙,配置github SSH公钥连接">mac生成ssh公匙,配置github SSH公钥连接</a><time datetime="2022-06-18T00:00:00.000Z" title="发表于 2022-06-18 08:00:00">2022-06-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/html5/" title="H5"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="H5"/></a><div class="content"><a class="title" href="/2021/10/13/html5/" title="H5">H5</a><time datetime="2021-10-13T00:00:00.000Z" title="发表于 2021-10-13 08:00:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/js/" title="JS Object"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS Object"/></a><div class="content"><a class="title" href="/2021/08/05/js/" title="JS Object">JS Object</a><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="命令行 linux常用命令"/></a><div class="content"><a class="title" href="/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/" title="命令行 linux常用命令">命令行 linux常用命令</a><time datetime="2021-08-05T06:20:40.000Z" title="发表于 2021-08-05 14:20:40">2021-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly博客主题的详细配置"/></a><div class="content"><a class="title" href="/2021/07/19/butterfly/" title="butterfly博客主题的详细配置">butterfly博客主题的详细配置</a><time datetime="2021-07-19T03:14:48.355Z" title="发表于 2021-07-19 11:14:48">2021-07-19</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size: 1.3em; color: #99a1ac">Hexo</a> <a href="/tags/JavaScript/" style="font-size: 1.3em; color: #99a1ac">JavaScript</a> <a href="/tags/JavaScript-ES6/" style="font-size: 1.1em; color: #999">JavaScript | ES6</a> <a href="/tags/Koa2/" style="font-size: 1.1em; color: #999">Koa2</a> <a href="/tags/Mongodb-Mongodb/" style="font-size: 1.1em; color: #999">Mongodb | Mongodb</a> <a href="/tags/VSCode/" style="font-size: 1.3em; color: #99a1ac">VSCode</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/%E4%BA%BA%E7%94%9F/" style="font-size: 1.1em; color: #999">人生</a> <a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.5em; color: #99a9bf">面试</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-29T08:55:37.659Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jie Meng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
