@@ -3,11 +3,11 @@
   <title>简简单单</title>
   
   
-  <link href="http://mengjie.com/atom.xml" rel="self"/>
+  <link href="https://mengjie0611.github.io/atom.xml" rel="self"/>
   
-  <link href="http://mengjie.com/"/>
+  <link href="https://mengjie0611.github.io/"/>
   <updated>2022-06-29T08:54:07.363Z</updated>
-  <id>http://mengjie.com/</id>
+  <id>https://mengjie0611.github.io/</id>
   
   <author>
     <name>Jie Meng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>mac生成ssh公匙,配置github SSH公钥连接</title>
-    <link href="http://mengjie.com/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/"/>
-    <id>http://mengjie.com/2022/06/18/mac%E7%94%9F%E6%88%90ssh%E5%85%AC%E5%8C%99/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2022-06-18T00:00:00.000Z</published>
     <updated>2022-06-29T08:54:07.363Z</updated>
     
@@ -34,14 +34,14 @@
     
     
     
-    <category term="git" scheme="http://mengjie.com/tags/git/"/>
+    <category term="git" scheme="https://mengjie0611.github.io/tags/git/"/>
     
   </entry>
   
   <entry>
     <title>H5</title>
-    <link href="http://mengjie.com/2021/10/13/html5/"/>
-    <id>http://mengjie.com/2021/10/13/html5/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-10-13T00:00:00.000Z</published>
     <updated>2022-01-12T07:47:15.739Z</updated>
     
@@ -56,14 +56,14 @@
     
     
     
-    <category term="面试" scheme="http://mengjie.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="面试" scheme="https://mengjie0611.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>JS Object</title>
-    <link href="http://mengjie.com/2021/08/05/js/"/>
-    <id>http://mengjie.com/2021/08/05/js/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-08-05T06:20:40.000Z</published>
     <updated>2021-08-10T02:28:51.130Z</updated>
     
@@ -78,14 +78,14 @@
     
     
     
-    <category term="JavaScript" scheme="http://mengjie.com/tags/JavaScript/"/>
+    <category term="JavaScript" scheme="https://mengjie0611.github.io/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>命令行 linux常用命令</title>
-    <link href="http://mengjie.com/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>http://mengjie.com/2021/08/05/%E5%B0%8F%E6%8A%80%E5%B7%A7/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-08-05T06:20:40.000Z</published>
     <updated>2021-08-06T03:19:36.981Z</updated>
     
@@ -100,14 +100,14 @@
     
     
     
-    <category term="JavaScript" scheme="http://mengjie.com/tags/JavaScript/"/>
+    <category term="JavaScript" scheme="https://mengjie0611.github.io/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>butterfly博客主题的详细配置</title>
-    <link href="http://mengjie.com/2021/07/19/butterfly/"/>
-    <id>http://mengjie.com/2021/07/19/butterfly/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-07-19T03:14:48.355Z</published>
     <updated>2021-07-19T03:22:01.366Z</updated>
     
@@ -122,14 +122,14 @@
     
     
     
-    <category term="Hexo" scheme="http://mengjie.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://mengjie0611.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="http://mengjie.com/2021/07/13/hello-world/"/>
-    <id>http://mengjie.com/2021/07/13/hello-world/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-07-13T06:51:08.365Z</published>
     <updated>2021-07-13T07:51:59.214Z</updated>
     
@@ -149,8 +149,8 @@
   
   <entry>
     <title>JavaScript中的异步编程解决方案</title>
-    <link href="http://mengjie.com/2021/03/18/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/"/>
-    <id>http://mengjie.com/2021/03/18/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T09:05:05.000Z</published>
     <updated>2021-07-19T05:53:56.480Z</updated>
     
@@ -165,14 +165,14 @@
     
     
     
-    <category term="JavaScript | ES6" scheme="http://mengjie.com/tags/JavaScript-ES6/"/>
+    <category term="JavaScript | ES6" scheme="https://mengjie0611.github.io/tags/JavaScript-ES6/"/>
     
   </entry>
   
   <entry>
     <title>VS Code 使用小技巧</title>
-    <link href="http://mengjie.com/2021/03/18/vscode-tips/"/>
-    <id>http://mengjie.com/2021/03/18/vscode-tips/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T07:49:01.000Z</published>
     <updated>2021-07-19T05:52:14.524Z</updated>
     
@@ -186,14 +186,14 @@
     
     
     
-    <category term="VSCode" scheme="http://mengjie.com/tags/VSCode/"/>
+    <category term="VSCode" scheme="https://mengjie0611.github.io/tags/VSCode/"/>
     
   </entry>
   
   <entry>
     <title>vscode-sync-setting</title>
-    <link href="http://mengjie.com/2021/03/18/vscode-sync-setting/"/>
-    <id>http://mengjie.com/2021/03/18/vscode-sync-setting/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T07:49:01.000Z</published>
     <updated>2021-07-19T05:52:19.386Z</updated>
     
@@ -214,14 +214,14 @@
     
     
     
-    <category term="VSCode" scheme="http://mengjie.com/tags/VSCode/"/>
+    <category term="VSCode" scheme="https://mengjie0611.github.io/tags/VSCode/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 入门初级指南</title>
-    <link href="http://mengjie.com/2021/03/18/hexo%E5%85%A5%E9%97%A8/"/>
-    <id>http://mengjie.com/2021/03/18/hexo%E5%85%A5%E9%97%A8/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T04:07:33.000Z</published>
     <updated>2021-07-19T03:13:28.201Z</updated>
     
@@ -238,14 +238,14 @@
     
     
     
-    <category term="Hexo" scheme="http://mengjie.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://mengjie0611.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Koa2入门小基础</title>
-    <link href="http://mengjie.com/2021/03/18/Koa2%E5%85%A5%E9%97%A8%E5%B0%8F%E5%9F%BA%E7%A1%80/"/>
-    <id>http://mengjie.com/2021/03/18/Koa2%E5%85%A5%E9%97%A8%E5%B0%8F%E5%9F%BA%E7%A1%80/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T00:00:00.000Z</published>
     <updated>2021-07-19T05:53:26.049Z</updated>
     
@@ -260,14 +260,14 @@
     
     
     
-    <category term="Koa2" scheme="http://mengjie.com/tags/Koa2/"/>
+    <category term="Koa2" scheme="https://mengjie0611.github.io/tags/Koa2/"/>
     
   </entry>
   
   <entry>
     <title>mongodb基础入门</title>
-    <link href="http://mengjie.com/2021/03/18/MongoDB%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
-    <id>http://mengjie.com/2021/03/18/MongoDB%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T00:00:00.000Z</published>
     <updated>2021-07-19T05:53:29.406Z</updated>
     
@@ -282,18 +282,18 @@
     
     
     
-    <category term="Mongodb | Mongodb" scheme="http://mengjie.com/tags/Mongodb-Mongodb/"/>
+    <category term="Mongodb | Mongodb" scheme="https://mengjie0611.github.io/tags/Mongodb-Mongodb/"/>
     
   </entry>
   
   <entry>
     <title>前端面试题积累</title>
-    <link href="http://mengjie.com/2021/03/18/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://mengjie.com/2021/03/18/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E7%A7%AF%E7%B4%AF/</id>
+    <link href="https://mengjie0611.github.io/posts/ab1655f6.html"/>
+    <id>https://mengjie0611.github.io/posts/ab1655f6.html</id>
     <published>2021-03-18T00:00:00.000Z</published>
-    <updated>2021-07-19T05:53:09.722Z</updated>
+    <updated>2022-07-25T09:03:37.440Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前端面试题积累"><a href="#前端面试题积累" class="headerlink" title="前端面试题积累"></a>前端面试题积累</h1><p>标签（空格分隔）： Summarize Interview</p><hr><h2 id="vue构造器以及实例属性"><a href="#vue构造器以及实例属性" class="headerlink" title="vue构造器以及实例属性"></a>vue构造器以及实例属性</h2><ul><li><p>构造器</p><ul><li>Vue.js是一个构造函数，编程中称之为构造器。</li><li>每一个new Vue() 都是一个Vue构造函数的实例，这个过程叫做实例化。  </li><li>构造函数需要将其实例化后才会启用。  </li><li>Vue构造器要求实例化时需要传入一个选项对象。    </li><li>选项对象包括数据(data)，模板(tamplate)，挂载元素(el)，方法(methods)，生命周期钩子等选项。</li><li>每个 Vue.js应用都是通过构造函数Vue创建一个 Vue 的根实例启动的。在文档中经常会使用 vm (ViewModel 的简称)这个变量名表示 Vue 实例。</li></ul>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//vue的实例化</span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  // 选项</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ul><li>可以扩展构造器Vue，从而用预定义选项创建可复用的组件构造器，所有组件都是被扩展的Vue的实例，使用 <code>Vue.extend(&#123;&#125;)</code>来扩展；</li></ul>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var MyComponent = Vue.extend(&#123;</span><br><span class="line">// 扩展选项</span><br><span class="line">&#125;)</span><br><span class="line">// 所有的MyComponent实例都将以预定义的扩展选项被创建</span><br><span class="line">// 相当于MyComponent继承Vue并且加上扩展的选项</span><br><span class="line"></span><br><span class="line">// MyComponent()相当于扩展后的vue，而myComponentInstance 就是扩展后vue的实例。</span><br><span class="line">var myComponentInstance = new MyComponent();</span><br></pre></td></tr></table></figure></li><li><p>属性与方法</p><ul><li>每个Vue的实例都会代理其data对象里的所有属性，被代理的属性是响应的；  </li><li>如果实例创建之后添加新的属性到实例上，不会触发视图更新；</li><li>不要在实例属性或者回调函数中使用箭头函数（如 <code>vm.$watch(&#39;a&#39;, newVal =&gt; this.myMethod())</code>）。因为箭头函数绑定父上下文，所以 this 不会像预想的一样是 Vue 实例，而是<code>this.myMethod</code>未被定义。</li><li>Vue实例暴露了一些有用的实例属性和方法，带有前缀 <code>$</code>，便于与代理的data区分<ul><li><code>vm.$el</code>：类型（HTMLElement）挂载元素，Vue实例的DOM根元素；</li><li><code>vm.$data</code>：类型（Object），Vue实例观察的数据对象；</li><li><code>vm.$props</code>：类型（Object）。</li></ul></li></ul></li></ul><h2 id="手写实现-throttle-（节流）函数"><a href="#手写实现-throttle-（节流）函数" class="headerlink" title="手写实现 throttle （节流）函数"></a>手写实现 <code>throttle</code> （节流）函数</h2><h3 id="什么是throttle"><a href="#什么是throttle" class="headerlink" title="什么是throttle"></a>什么是throttle</h3><ul><li><p>定义：如果将水龙头拧紧直到水是以水滴的形式流出，那你会发现每隔一段时间，就会有一滴水流出。也就是会说预先设定一个执行周期，当调用动作的时刻大于等于执行周期则执行该动作，然后进入下一个新周期。</p></li><li><p>接口定义</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 频率控制 返回函数连续调用时，action 执行频率限定为 次 / delay</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>delay  &#123;number&#125;    延迟时间，单位毫秒</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>action &#123;function&#125;  请求关联函数，实际应用需要调用的函数</span></span><br><span class="line"><span class="comment">* <span class="doctag">@return <span class="type">&#123;function&#125;</span>    </span>返回客户调用函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">throttle(delay,action)</span><br></pre></td></tr></table></figure></li></ul><h3 id="简单实现"><a href="#简单实现" class="headerlink" title="简单实现"></a>简单实现</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> throttle = <span class="function"><span class="keyword">function</span>(<span class="params">delay, action</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> last = 0<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> curr = +<span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">    <span class="keyword">if</span> (curr - last &gt; delay)&#123;</span><br><span class="line">      action.apply(<span class="built_in">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">      last = curr </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="拓展延伸"><a href="#拓展延伸" class="headerlink" title="拓展延伸"></a>拓展延伸</h3><p><a href="https://www.cnblogs.com/fsjohnhuang/p/4147810.html">函数节流（throttle）与函数去抖（debounce）</a></p><h2 id="css实现自适应的正方形"><a href="#css实现自适应的正方形" class="headerlink" title="css实现自适应的正方形"></a>css实现自适应的正方形</h2><ul><li><p>padding-bottom实现</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;square-shape&quot;</span>&gt;</span>这是一个可以自适应的正方形，此法很好用，有内容也是正方形。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.square-shape &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-bottom: 30%;</span><br><span class="line">  border: 1px solid #f00;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>伪元素的padding-bottom，内嵌absolute元素</p></li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;square-shape&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span>这是一个可以自适应的正方形<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.square-shape &#123;</span><br><span class="line">  width: 50%;</span><br><span class="line">  border: 1px solid #f00;</span><br><span class="line">&#125;</span><br><span class="line">.square-shape:after &#123;</span><br><span class="line">  content: &#x27;&#x27;;</span><br><span class="line">  display: block;</span><br><span class="line">  padding-bottom: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.content &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="手写实现以下事件委托函数"><a href="#手写实现以下事件委托函数" class="headerlink" title="手写实现以下事件委托函数"></a>手写实现以下事件委托函数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 手写实现以下事件委托函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delegate</span>(<span class="params">parent, selector, handle</span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure><ul><li><p>事件委托，通俗来说就是将元素的事件委托给它的父级或者更外级元素处理。</p></li><li><p>需要注意的地方：</p><ul><li>保证兼容性，包括：事件绑定、元素选择器 Element.matches 、事件 event 对象</li><li>回调函数 this 指向</li><li>当目标元素下还有子元素时，子元素不能触发事件。<br>解决办法是在触发过程中对元素进行判断，如果当前触发的元素不是目标元素，就继续往该元素的 parentNode 查找，否则循环结束。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">/ *</span><br><span class="line">  * [delegateEvent description]</span><br><span class="line">  * @param  &#123;[type]&#125;   parentSelector 父元素</span><br><span class="line">  * @param  &#123;[type]&#125;   targetSelector 目标元素</span><br><span class="line">  * @param  &#123;[type]&#125;   events         事件</span><br><span class="line">  * @param  &#123;<span class="built_in">Function</span>&#125; fn             回调函数</span><br><span class="line">  * @<span class="keyword">return</span> &#123;[type]&#125;                  <span class="literal">null</span></span><br><span class="line">   */</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delegateEvent</span>(<span class="params">parentSelector, targetSelector, events, fn</span>) </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 事件绑定浏览器兼容性处理</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">addEvent</span>(<span class="params">ele, type, handle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(ele.addEventListener) &#123;</span><br><span class="line">      ele.addEventListener(type, handle, <span class="literal">false</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(ele.attachEvent)&#123;</span><br><span class="line">      ele.attachEvent(<span class="string">&#x27;on&#x27;</span> + type, handle);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      ele[<span class="string">&#x27;on&#x27;</span> + type] = handle;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 如果元素被指定的选择器字符串选择， Element.matches() 方法返回 true; 否则返回 false。</span></span><br><span class="line">  <span class="comment">// 对于不支持 Element.matches() 或 Element.matchesSelector()，但支持 document.querySelectorAll() 方法的浏览器，存在以下替代方案</span></span><br><span class="line">  <span class="keyword">if</span> (!Element.prototype.matches) &#123;</span><br><span class="line">    Element.prototype.matches =</span><br><span class="line">    Element.prototype.matchesSelector ||</span><br><span class="line">    Element.prototype.mozMatchesSelector ||</span><br><span class="line">    Element.prototype.msMatchesSelector ||</span><br><span class="line">    Element.prototype.oMatchesSelector ||</span><br><span class="line">    Element.prototype.webkitMatchesSelector ||</span><br><span class="line">    <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> matches = (<span class="built_in">this</span>.document || <span class="built_in">this</span>.ownerDocument).querySelectorAll(s),</span><br><span class="line">          i = matches.length;</span><br><span class="line">      <span class="keyword">while</span> (--i &gt;= <span class="number">0</span> &amp;&amp; matches.item(i) !== <span class="built_in">this</span>) &#123;&#125;</span><br><span class="line">      <span class="keyword">return</span> i &gt; -<span class="number">1</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 事件处理逻辑</span></span><br><span class="line">  addEvent(parentSelector, events, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 兼容性处理</span></span><br><span class="line">    <span class="keyword">var</span> e = e || <span class="built_in">window</span>.event;</span><br><span class="line">    <span class="keyword">var</span> t = e.target || e.srcElement;</span><br><span class="line">    <span class="comment">// currentTarget === parentSelector</span></span><br><span class="line">    <span class="keyword">var</span> currentTarget = e.currentTarget;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历并判断是否为目标元素，如果不是，则往元素的 parentNode 继续查找</span></span><br><span class="line">    <span class="keyword">while</span>(!t.matches(targetSelector)) &#123;</span><br><span class="line">      <span class="comment">// 如果是目标元素则跳出循环</span></span><br><span class="line">        <span class="keyword">if</span>(t === currentTarget) &#123;</span><br><span class="line">        t = <span class="literal">null</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        t = t.parentNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(t) &#123;</span><br><span class="line">    <span class="comment">// 将回调函数的 this 指向目标元素</span></span><br><span class="line">    fn.call(t, <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul></li><li><p>实例</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">&quot;myLink&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;1&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:;&quot;</span>&gt;</span>bbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;3&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="keyword">var</span> myLink = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;#myLink&#x27;</span>);</span></span><br><span class="line"><span class="javascript">  delegateEvent(myLink, <span class="string">&#x27;li.link&#x27;</span>, <span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">this</span>, <span class="built_in">this</span>.id + <span class="string">&#x27;：&#x27;</span> + <span class="built_in">this</span>.innerText);</span></span><br><span class="line"><span class="javascript">  &#125;);</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul><hr><p>创建时间  2017-11-18 By MarlonChiu </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前端面试题积累"><a href="#前端面试题积累" class="headerlink" title="前端面试题积累"></a>前端面试题积累</h1><p>标签（空格分隔）： Summarize Interview</p><hr><h2 id="vue构造器以及实例属性"><a href="#vue构造器以及实例属性" class="headerlink" title="vue构造器以及实例属性"></a>vue构造器以及实例属性</h2><ul><li><p>构造器</p><ul><li>Vue.js是一个构造函数，编程中称之为构造器。</li><li>每一个new Vue() 都是一个Vue构造函数的实例，这个过程叫做实例化。  </li><li>构造函数需要将其实例化后才会启用。  </li><li>Vue构造器要求实例化时需要传入一个选项对象。    </li><li>选项对象包括数据(data)，模板(tamplate)，挂载元素(el)，方法(methods)，生命周期钩子等选项。</li><li>每个 Vue.js应用都是通过构造函数Vue创建一个 Vue 的根实例启动的。在文档中经常会使用 vm (ViewModel 的简称)这个变量名表示 Vue 实例。</li></ul>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//vue的实例化</span><br><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  // 选项</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><ul><li>可以扩展构造器Vue，从而用预定义选项创建可复用的组件构造器，所有组件都是被扩展的Vue的实例，使用 <code>Vue.extend(&#123;&#125;)</code>来扩展；</li></ul>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var MyComponent = Vue.extend(&#123;</span><br><span class="line">// 扩展选项</span><br><span class="line">&#125;)</span><br><span class="line">// 所有的MyComponent实例都将以预定义的扩展选项被创建</span><br><span class="line">// 相当于MyComponent继承Vue并且加上扩展的选项</span><br><span class="line"></span><br><span class="line">// MyComponent()相当于扩展后的vue，而myComponentInstance 就是扩展后vue的实例。</span><br><span class="line">var myComponentInstance = new MyComponent();</span><br></pre></td></tr></table></figure></li><li><p>属性与方法</p><ul><li>每个Vue的实例都会代理其data对象里的所有属性，被代理的属性是响应的；  </li><li>如果实例创建之后添加新的属性到实例上，不会触发视图更新；</li><li>不要在实例属性或者回调函数中使用箭头函数（如 <code>vm.$watch(&#39;a&#39;, newVal =&gt; this.myMethod())</code>）。因为箭头函数绑定父上下文，所以 this 不会像预想的一样是 Vue 实例，而是<code>this.myMethod</code>未被定义。</li><li>Vue实例暴露了一些有用的实例属性和方法，带有前缀 <code>$</code>，便于与代理的data区分<ul><li><code>vm.$el</code>：类型（HTMLElement）挂载元素，Vue实例的DOM根元素；</li><li><code>vm.$data</code>：类型（Object），Vue实例观察的数据对象；</li><li><code>vm.$props</code>：类型（Object）。</li></ul></li></ul></li></ul><h2 id="手写实现-throttle-（节流）函数"><a href="#手写实现-throttle-（节流）函数" class="headerlink" title="手写实现 throttle （节流）函数"></a>手写实现 <code>throttle</code> （节流）函数</h2><h3 id="什么是throttle"><a href="#什么是throttle" class="headerlink" title="什么是throttle"></a>什么是throttle</h3><ul><li><p>定义：如果将水龙头拧紧直到水是以水滴的形式流出，那你会发现每隔一段时间，就会有一滴水流出。也就是会说预先设定一个执行周期，当调用动作的时刻大于等于执行周期则执行该动作，然后进入下一个新周期。</p></li><li><p>接口定义</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 频率控制 返回函数连续调用时，action 执行频率限定为 次 / delay</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>delay  &#123;number&#125;    延迟时间，单位毫秒</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>action &#123;function&#125;  请求关联函数，实际应用需要调用的函数</span></span><br><span class="line"><span class="comment">* <span class="doctag">@return <span class="type">&#123;function&#125;</span>    </span>返回客户调用函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">throttle(delay,action)</span><br></pre></td></tr></table></figure></li></ul><h3 id="简单实现"><a href="#简单实现" class="headerlink" title="简单实现"></a>简单实现</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> throttle = <span class="function"><span class="keyword">function</span>(<span class="params">delay, action</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> last = <span class="number">0</span></span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> curr = +<span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">    <span class="keyword">if</span> (curr - last &gt; delay)&#123;</span><br><span class="line">      action.apply(<span class="built_in">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">      last = curr </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="拓展延伸"><a href="#拓展延伸" class="headerlink" title="拓展延伸"></a>拓展延伸</h3><p><a href="https://www.cnblogs.com/fsjohnhuang/p/4147810.html">函数节流（throttle）与函数去抖（debounce）</a></p><h2 id="css实现自适应的正方形"><a href="#css实现自适应的正方形" class="headerlink" title="css实现自适应的正方形"></a>css实现自适应的正方形</h2><ul><li><p>padding-bottom实现</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;square-shape&quot;</span>&gt;</span>这是一个可以自适应的正方形，此法很好用，有内容也是正方形。<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.square-shape &#123;</span><br><span class="line">  width: 30%;</span><br><span class="line">  height: 0;</span><br><span class="line">  padding-bottom: 30%;</span><br><span class="line">  border: 1px solid #f00;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>伪元素的padding-bottom，内嵌absolute元素</p></li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;square-shape&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span>这是一个可以自适应的正方形<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.square-shape &#123;</span><br><span class="line">  width: 50%;</span><br><span class="line">  border: 1px solid #f00;</span><br><span class="line">&#125;</span><br><span class="line">.square-shape:after &#123;</span><br><span class="line">  content: &#x27;&#x27;;</span><br><span class="line">  display: block;</span><br><span class="line">  padding-bottom: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.content &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="手写实现以下事件委托函数"><a href="#手写实现以下事件委托函数" class="headerlink" title="手写实现以下事件委托函数"></a>手写实现以下事件委托函数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 手写实现以下事件委托函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delegate</span>(<span class="params">parent, selector, handle</span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure><ul><li><p>事件委托，通俗来说就是将元素的事件委托给它的父级或者更外级元素处理。</p></li><li><p>需要注意的地方：</p><ul><li>保证兼容性，包括：事件绑定、元素选择器 Element.matches 、事件 event 对象</li><li>回调函数 this 指向</li><li>当目标元素下还有子元素时，子元素不能触发事件。<br>解决办法是在触发过程中对元素进行判断，如果当前触发的元素不是目标元素，就继续往该元素的 parentNode 查找，否则循环结束。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">/ *</span><br><span class="line">  * [delegateEvent description]</span><br><span class="line">  * @param  &#123;[type]&#125;   parentSelector 父元素</span><br><span class="line">  * @param  &#123;[type]&#125;   targetSelector 目标元素</span><br><span class="line">  * @param  &#123;[type]&#125;   events         事件</span><br><span class="line">  * @param  &#123;<span class="built_in">Function</span>&#125; fn             回调函数</span><br><span class="line">  * @<span class="keyword">return</span> &#123;[type]&#125;                  <span class="literal">null</span></span><br><span class="line">   */</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">delegateEvent</span>(<span class="params">parentSelector, targetSelector, events, fn</span>) </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 事件绑定浏览器兼容性处理</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">addEvent</span>(<span class="params">ele, type, handle</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(ele.addEventListener) &#123;</span><br><span class="line">      ele.addEventListener(type, handle, <span class="literal">false</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(ele.attachEvent)&#123;</span><br><span class="line">      ele.attachEvent(<span class="string">&#x27;on&#x27;</span> + type, handle);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      ele[<span class="string">&#x27;on&#x27;</span> + type] = handle;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 如果元素被指定的选择器字符串选择， Element.matches() 方法返回 true; 否则返回 false。</span></span><br><span class="line">  <span class="comment">// 对于不支持 Element.matches() 或 Element.matchesSelector()，但支持 document.querySelectorAll() 方法的浏览器，存在以下替代方案</span></span><br><span class="line">  <span class="keyword">if</span> (!Element.prototype.matches) &#123;</span><br><span class="line">    Element.prototype.matches =</span><br><span class="line">    Element.prototype.matchesSelector ||</span><br><span class="line">    Element.prototype.mozMatchesSelector ||</span><br><span class="line">    Element.prototype.msMatchesSelector ||</span><br><span class="line">    Element.prototype.oMatchesSelector ||</span><br><span class="line">    Element.prototype.webkitMatchesSelector ||</span><br><span class="line">    <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> matches = (<span class="built_in">this</span>.document || <span class="built_in">this</span>.ownerDocument).querySelectorAll(s),</span><br><span class="line">          i = matches.length;</span><br><span class="line">      <span class="keyword">while</span> (--i &gt;= <span class="number">0</span> &amp;&amp; matches.item(i) !== <span class="built_in">this</span>) &#123;&#125;</span><br><span class="line">      <span class="keyword">return</span> i &gt; -<span class="number">1</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 事件处理逻辑</span></span><br><span class="line">  addEvent(parentSelector, events, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 兼容性处理</span></span><br><span class="line">    <span class="keyword">var</span> e = e || <span class="built_in">window</span>.event;</span><br><span class="line">    <span class="keyword">var</span> t = e.target || e.srcElement;</span><br><span class="line">    <span class="comment">// currentTarget === parentSelector</span></span><br><span class="line">    <span class="keyword">var</span> currentTarget = e.currentTarget;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 遍历并判断是否为目标元素，如果不是，则往元素的 parentNode 继续查找</span></span><br><span class="line">    <span class="keyword">while</span>(!t.matches(targetSelector)) &#123;</span><br><span class="line">      <span class="comment">// 如果是目标元素则跳出循环</span></span><br><span class="line">        <span class="keyword">if</span>(t === currentTarget) &#123;</span><br><span class="line">        t = <span class="literal">null</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        t = t.parentNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(t) &#123;</span><br><span class="line">    <span class="comment">// 将回调函数的 this 指向目标元素</span></span><br><span class="line">    fn.call(t, <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul></li><li><p>实例</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">&quot;myLink&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;1&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:;&quot;</span>&gt;</span>bbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">id</span>=<span class="string">&quot;3&quot;</span> <span class="attr">class</span>=<span class="string">&quot;link&quot;</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">  <span class="keyword">var</span> myLink = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;#myLink&#x27;</span>);</span></span><br><span class="line"><span class="javascript">  delegateEvent(myLink, <span class="string">&#x27;li.link&#x27;</span>, <span class="string">&#x27;click&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(<span class="built_in">this</span>, <span class="built_in">this</span>.id + <span class="string">&#x27;：&#x27;</span> + <span class="built_in">this</span>.innerText);</span></span><br><span class="line"><span class="javascript">  &#125;);</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul><hr>]]></content>
     
     
       
@@ -306,14 +306,14 @@
     
     
     
-    <category term="面试" scheme="http://mengjie.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="面试" scheme="https://mengjie0611.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>常用前端面试参考总结</title>
-    <link href="http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/"/>
-    <id>http://mengjie.com/2021/03/18/%E5%B8%B8%E7%94%A8%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E5%8F%82%E8%80%83%E6%80%BB%E7%BB%93/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2021-03-18T00:00:00.000Z</published>
     <updated>2021-07-19T05:52:56.184Z</updated>
     
@@ -329,14 +329,38 @@
     
     
     
-    <category term="面试" scheme="http://mengjie.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="面试" scheme="https://mengjie0611.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端面试题总结</title>
+    <link href="https://mengjie0611.github.io/posts/6427d5c7.html"/>
+    <id>https://mengjie0611.github.io/posts/6427d5c7.html</id>
+    <published>2021-03-18T00:00:00.000Z</published>
+    <updated>2022-07-25T09:03:37.441Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前端面试题总结"><a href="#前端面试题总结" class="headerlink" title="前端面试题总结"></a>前端面试题总结</h1><p>标签（空格分隔）： Summarize Interview</p><hr><h2 id="Vue-的响应式原理中-Object-defineProperty-有什么缺陷？为什么在-Vue3-0-采用了-Proxy，抛弃了-Object-defineProperty？"><a href="#Vue-的响应式原理中-Object-defineProperty-有什么缺陷？为什么在-Vue3-0-采用了-Proxy，抛弃了-Object-defineProperty？" class="headerlink" title="Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue3.0 采用了 Proxy，抛弃了 Object.defineProperty？"></a>Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue3.0 采用了 Proxy，抛弃了 Object.defineProperty？</h2><ul><li>object.defineProperty<ul><li>数组的位置不固定，数量多变，一般对象的key映射的value是固定的，但如果数据删除了某个元素或者新增了某个元素就会导致整体的index和value错位，会触发多次set</li><li>数组的元素可能非常多，每个元素劫持有一定的浪费</li><li>vue将数组的7个方法进行了重写</li><li>object.definedProperty必须要预先劫持属性，后添加的属性也必须要手动再次劫持</li></ul></li><li>Proxy<ul><li>Proxy代理了整个对象，不需要预先劫持属性，在获取或者修改的时候会通过get和set通知，新增属性总是能被捕获到</li></ul></li></ul><h2 id="函数节流防抖"><a href="#函数节流防抖" class="headerlink" title="函数节流防抖"></a>函数节流防抖</h2><ul><li>节流throttle<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> throttle = <span class="function">(<span class="params">fn,delay</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> latstime = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> now = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">    <span class="keyword">if</span>(now - latstime &gt;= delay) &#123;</span><br><span class="line">         fn.apply(<span class="built_in">this</span>,<span class="built_in">arguments</span>)</span><br><span class="line">    &#125; </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li>防抖 debounce<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> debounce = <span class="function">(<span class="params">fn,delay</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> timer = <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="function">()=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(timer) &#123;</span><br><span class="line">            <span class="built_in">clearTimeout</span>(timer);</span><br><span class="line">        &#125;;</span><br><span class="line">        timer = <span class="built_in">setTimeout</span>(fn,delay)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="css盒子模型"><a href="#css盒子模型" class="headerlink" title="css盒子模型"></a>css盒子模型</h2>盒模型是有两种标准一种是标准模型，一种是ie模型</li><li>ie盒模型（怪异盒子）<br>width/height = content + border + padding;</li><li>标准盒模型<br>width/height = content;</li></ul><p>无论是标准盒子模型还是IE盒子模型，总宽度都是一样的<br>标准盒子模型 总宽度= margin + padding + border + width<br>IE盒子模型 总宽度 = margin + width（ width = content + padding + border）<br>区别是IE盒子模型的width包含了padding和border</p><h2 id="vue响应式原理"><a href="#vue响应式原理" class="headerlink" title="vue响应式原理"></a>vue响应式原理</h2><p>双向绑定是哪双向？分别是怎么做的？发布订阅模式是什么样的？实现原理？数据劫持是怎么劫持的？object.dedefineProperty代理对象有什么问题？能代理数组嘛？数组是怎么劫持的?getset里都做了什么？</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前端面试题总结&quot;&gt;&lt;a href=&quot;#前端面试题总结&quot; class=&quot;headerlink&quot; title=&quot;前端面试题总结&quot;&gt;&lt;/a&gt;前端面试题总结&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： Summarize Interview&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Vue</summary>
+      
+    
+    
+    
+    
+    <category term="面试" scheme="https://mengjie0611.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>没有仪式感的人生，永远都是灰头土脸</title>
-    <link href="http://mengjie.com/2020/03/18/sense-of-ritual/"/>
-    <id>http://mengjie.com/2020/03/18/sense-of-ritual/</id>
+    <link href="https://mengjie0611.github.io/posts/undefined.html"/>
+    <id>https://mengjie0611.github.io/posts/undefined.html</id>
     <published>2020-03-17T16:18:11.000Z</published>
     <updated>2021-07-19T03:07:36.489Z</updated>
     
@@ -348,7 +372,7 @@
     
     
     
-    <category term="人生" scheme="http://mengjie.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    <category term="人生" scheme="https://mengjie0611.github.io/tags/%E4%BA%BA%E7%94%9F/"/>
     
   </entry>
   
